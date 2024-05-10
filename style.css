@@ -1,0 +1,326 @@
+/* Google Font Poppins  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: marvel;
+    src: url('fonts/MarvelRegular-Dj83.ttf');
+}
+@font-face{
+    font-family: spider;
+    src: url('fonts/Aku\ &\ Kamu.otf');
+}
+@font-face{
+    font-family: meles;
+    src: url('fonts/Colors\ Of\ Autumn.ttf');
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    width: 70%;
+    height: 80%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    background: url('./wallpaperflare.com_wallpaper (5).jpg') no-repeat center center/cover; 
+    z-index: 0; 
+}
+
+nav.upr {
+    position: relative;
+    z-index: 2; 
+}
+
+.second-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.9));
+    z-index: 1; 
+}
+
+
+.upr {
+    z-index: 2;
+}
+
+.png {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    height: 100%;
+}
+
+header nav{
+    width: 90%;
+    height: 12%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    display: flex;
+    /* z-index: 20; */
+}
+
+header nav .brand{
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+}
+header nav .brand img{
+    width: 45px;
+    height: 50px;
+    /* image-shadow: 2px 2px 4px rgba(0, 0, 0, 0.859); */
+    filter: drop-shadow(0 4px 8px rgb(0, 0, 0));
+}
+header nav ul{
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li{
+    list-style-type: none;
+    padding: 5px 15px;
+    text-shadow: black;
+}
+header nav ul li a {
+    color: #235cbec9;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 11px;
+    transition: all .3s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.859); 
+  
+    
+}
+
+header nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+header nav .login{
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav .login button{
+    padding: 3px 12px;
+    background: #fff;
+    border: 2px solid #fff;
+    color: #993230;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 18px;
+    outline: none;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+header nav .login button:hover{
+    background: transparent;
+    color: #fff;
+}
+header nav .login .bi{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 5px;
+}
+.upr{
+    position: relative;
+    z-index: 3;
+}
+section {
+    width: 90%;
+    height: 88%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    display: flex;
+    z-index: 2;
+    position: relative;
+}
+section .left_side, .right_side{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    color: #fff;
+    position: relative;
+}
+section .left_side .top_bx{
+    position: relative;
+    width: 300px;
+    height: auto;
+    /* border: 1px solid #fff; */
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+.logogow{
+    width: 297px;
+    height: 145px;
+    margin-top: 40px;
+    margin-left: -4px;
+    margin-bottom: -30px;
+}
+
+section .left_side  p{
+    width: 200px;
+    word-break: break-all;
+    font-size: 11px;
+    font-family: sans-serif;
+    margin-top: 40px;
+    font-weight: 300;
+    margin-top: 60px;
+}
+section .left_side  button{
+    width: 150px;
+    font-size: 11px;
+    font-family: "system-ui";
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 20px;
+    padding: 4px 0px;
+    font-weight: bold;
+    background: #fff;
+    margin-top: 30px;
+    color: #1554b1;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+section .left_side  button:hover{
+    animation: shake .3s linear infinite both;
+}
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+section .left_side  ul{
+   display: flex;
+   width: 80px;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 30px;
+}
+section .left_side  ul li{
+  list-style-type: none;
+  transition: all .3s ease-in-out;
+  color: #fff;
+}
+section .left_side  ul li:hover{
+  transform: rotateZ(360deg);
+  color: #1554b1;
+}
+section .left_side  ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+section .right_side{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Poppins', sans-serif;
+}
+section .right_side a{
+    color: #fff;
+    margin-right: 40px;
+}
+section .right_side .cont1{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+section .right_side .cont1 h5{
+    padding: 6px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+section .right_side .cont1 h4{
+    font-size: 13px;
+    margin-left: 15px;
+    line-height: 15px;
+}
+section .right_side .cont1 h4 .sp1{
+    padding-left: 10px;
+}
+section .right_side .cont1 h4 .sp2{
+   font-size: 11px;
+}
+section .right_side .cont2{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+section .right_side .cont2 h5{
+    padding: 6px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+section .right_side .cont2 h4{
+    font-size: 13px;
+    margin-left: 17px;
+    line-height: 15px;
+}
+section .right_side .cont2 h4 .sp1{
+    padding-left: 10px;
+}
+section .right_side .cont2 h4 .sp2{
+   font-size: 11px;
+}
+section .right_side .video_bx{
+   margin-top: 100px;
+}
+section .right_side .video_bx .bx{
+   width: 190px;
+   height: 100px;
+   border: 2px solid #fff;
+   display: flex;
+   cursor: pointer;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   background: url('./kratos-blades-of-chaos-god-of-war-ragnarok-hd-wallpaper-uhdpaper.com-363@1@j.jpg')no-repeat center center/cover;
+}
+
